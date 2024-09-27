@@ -5,6 +5,8 @@ import Rightside from '@/components/Rightside'
 import React from 'react'
 import { motion } from "framer-motion"
 import Banner from '@/components/Banner'
+import About from '@/components/About'
+import Experience from '@/components/Experience'
 
 const page = () => {
   return (
@@ -20,8 +22,10 @@ const page = () => {
           >
             <Leftside />
           </motion.div>
-          <div className='h-[88vh] mx-auto p-4'>
+          <div className='h-[88vh] w-full mx-auto p-4'>
             <Banner />
+            <About />
+            <Experience />
           </div>
           <motion.div
             initial={{ opacity: 0 }}

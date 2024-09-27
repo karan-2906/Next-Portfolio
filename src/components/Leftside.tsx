@@ -1,6 +1,6 @@
 "use client"
 import { SlSocialInstagram, SlSocialLinkedin } from "react-icons/sl";
-import { MdOutlineConnectWithoutContact } from "react-icons/md";
+import { BsPersonWorkspace } from "react-icons/bs";
 import { TbBrandGithub } from "react-icons/tb";
 import { useState } from "react";
 import { motion } from "framer-motion";
@@ -12,7 +12,7 @@ const Leftside = () => {
     { href: "https://github.com/karan-2906", icon: TbBrandGithub, text: "See Pojects" },
     { href: "https://www.linkedin.com/in/karan-gandhi-15082222a/", icon: SlSocialLinkedin, text: "Send Connection" },
     { href: "https://www.instagram.com/_karangandhi_/", icon: SlSocialInstagram, text: "Follow Me" },
-    // { href: "#contact", icon: MdOutlineConnectWithoutContact, text: "Contact Me" },
+    // { href: "#contact", icon: BsPersonWorkspace, text: "Contact Me" },
   ];
 
   return (
@@ -20,7 +20,7 @@ const Leftside = () => {
       className="w-full h-full flex flex-col items-center justify-end gap-4 text-textLight"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: 0.1 }}
+      transition={{ duration: 0.5, delay: 0.7 }}
     >
       <div className="flex gap-4 flex-col">
         {socialItems.map((item, index) => (
