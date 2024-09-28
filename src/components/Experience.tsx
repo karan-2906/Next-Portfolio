@@ -1,7 +1,9 @@
 
 const Experience = () => {
   return (
-    <div>Experience</div>
+    <div>
+      Experience
+      </div>
   )
 }
 
