@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import { TiArrowBack, TiArrowForward } from "react-icons/ti"
+import { TiArrowForward } from "react-icons/ti"
 
 const Mayvent = () => {
     return (
@@ -13,8 +13,19 @@ const Mayvent = () => {
                 Full stack Developer <a href="https://www.mayvent.com/" target="_blank" className="text-textGreen tracking-wide">@Mayvent</a>
             </h3>
             <p className="text-sm mt-1 font-medium text-textDark">July 2024 - Present</p>
-            <ul>
-                <li><span><TiArrowForward/></span></li>
+            <ul className="mt-6 flex flex-col gap-3">
+                <li className="text-base flex gap-2 text-textDark">
+                    <span className="text-textGreen mt-1"><TiArrowForward /></span>
+                    Developed and maintained the company website using Next.js and Tailwind CSS
+                </li>
+                <li className="text-base flex gap-2 text-textDark">
+                    <span className="text-textGreen mt-1"><TiArrowForward /></span>
+                    Work with a variety of different languages, platforms, frameworks such as JavaScript, TypeScript, Prisma, React and Next
+                </li>
+                <li className="text-base flex gap-2 text-textDark">
+                    <span className="text-textGreen mt-1"><TiArrowForward /></span>
+                    Communicate with multi-disciplinary teams of Engineers, Designers, Team Lead and clients on a daily basis
+                </li>
             </ul>
 
         </motion.div>
