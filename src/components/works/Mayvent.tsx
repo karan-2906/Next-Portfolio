@@ -20,7 +20,7 @@ const Mayvent = () => {
                 </li>
                 <li className="text-base flex gap-2 text-textDark">
                     <span className="text-textGreen mt-1"><TiArrowForward /></span>
-                    Work with a variety of different languages, platforms, frameworks such as JavaScript, TypeScript, Prisma, React and Next
+                    Work with a variety of different packages, animation styles, languages, platforms, frameworks such as JavaScript, TypeScript, Prisma, React and Next
                 </li>
                 <li className="text-base flex gap-2 text-textDark">
                     <span className="text-textGreen mt-1"><TiArrowForward /></span>
