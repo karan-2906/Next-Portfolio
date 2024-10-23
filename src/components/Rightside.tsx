@@ -15,8 +15,8 @@ const Rightside = () => {
 
   return (
     <div className="w-full h-full flex flex-col items-center justify-end gap-6 text-textLight">
-        <a href="mailto:karangandhi486@gmail.com">
-            <p className="text-sm rotate-90 w-[28rem] tracking-widest text-textGreen">
+        <a href="mailto:karangandhi486@gmail.com" className="w-fit rotate-90">
+            <p className="text-sm  w-[28rem] tracking-widest text-textGreen">
                 {text}
             </p>
         </a>

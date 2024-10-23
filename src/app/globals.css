@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.cursor-inner{
+    width: 8px;
+    height: 8px;
+    background-color: #28a384;
+}
+.cursor-outer{
+    width: 35px;
+    height: 35px;
+    border: 2px solid white;
+}
+.cursor-inner,
+.cursor-outer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 9999;
+    pointer-events: none;
+}
+.cursor-inner.hover{
+    width: 25px;
+    height: 25px;
+    transition: all .2s;
+    mix-blend-mode: difference;
+}
+.cursor-outer.hover{
+    width: 50px;
+    height: 50px;
+    transition: all .2s;
+}
+
+body {
+    cursor: none;
+}
