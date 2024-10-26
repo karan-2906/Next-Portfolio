@@ -39,9 +39,12 @@ export async function POST(req: NextRequest) {
         console.log(newClient);
         await sendEmail.sendEmail(name, email, message);
         return NextResponse.json({ message: "Contact form submitted" }, { status: 200 });
-    } catch (error: any) {
-        console.error(error);
-        return NextResponse.json({ message: error.message }, { status: 500 });
+    } catch (error: unknown) {
+        if (error instanceof Error) {
+            console.error(error);
+            return NextResponse.json({ message: error.message }, { status: 500 });
+        }
+        return NextResponse.json({ message: "An unknown error occurred" }, { status: 500 });
     }
 }
 
