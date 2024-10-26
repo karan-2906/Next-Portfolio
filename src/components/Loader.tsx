@@ -33,7 +33,7 @@ const Loader = () => {
             >
                 {['k', 'a', 'r', 'a', 'n'].map((letter, index) => (
                     <motion.div key={index} variants={itemVariants}>
-                        <Image width="30" height="30" src={`/logo/${letter}.png`} alt={letter} />
+                        <Image width="50" height="50" src={`/logo/${letter}.png`} alt={letter} />
                     </motion.div>
                 ))}
             </motion.div>
@@ -45,7 +45,7 @@ const Loader = () => {
             >
                 {['g', 'ga', 'gn', 'd', 'h', 'i'].map((letter, index) => (
                     <motion.div key={index} variants={itemVariants}>
-                        <Image width="25" height="25" src={`/logo/${letter}.png`} alt={letter} />
+                        <Image width="50" height="50" src={`/logo/${letter}.png`} alt={letter} />
                     </motion.div>
                 ))}
             </motion.div>

@@ -3,7 +3,7 @@ import Leftside from '@/components/Leftside'
 import Navbar from '@/components/Navbar'
 import Rightside from '@/components/Rightside'
 import React, { useEffect, useState } from 'react'
-import { motion, AnimatePresence } from "framer-motion"
+import { motion } from "framer-motion"
 import Banner from '@/components/Banner'
 import About from '@/components/About'
 import Experience from '@/components/Experience'
@@ -70,7 +70,6 @@ const Page = () => {
 
   return (
     <div className=''>
-      <AnimatePresence>
         {loading ? (
           <Loader />
         ) : (
@@ -114,7 +113,6 @@ const Page = () => {
             </div>
           </motion.div>
         )}
-      </AnimatePresence>
     </div>
   )
 }
