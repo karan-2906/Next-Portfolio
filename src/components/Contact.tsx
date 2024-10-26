@@ -1,7 +1,6 @@
 "use client"
-import axios from 'axios';
 import React, { useState, useRef, useEffect } from 'react'
-import { toast, Toaster } from 'sonner';
+import { toast } from 'sonner';
 import { motion } from 'framer-motion';
 
 // const host = "http://localhost:4001";
