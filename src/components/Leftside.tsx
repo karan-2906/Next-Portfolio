@@ -1,6 +1,5 @@
 "use client"
 import { SlSocialInstagram, SlSocialLinkedin } from "react-icons/sl";
-import { BsPersonWorkspace } from "react-icons/bs";
 import { TbBrandGithub } from "react-icons/tb";
 import { useState } from "react";
 import { motion } from "framer-motion";

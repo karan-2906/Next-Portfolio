@@ -3,7 +3,7 @@ import { FaRegFolder } from 'react-icons/fa'
 import { RxOpenInNewWindow } from 'react-icons/rx'
 import { TbBrandGithub } from 'react-icons/tb'
 
-const Archivecard = ({title, description, image, link, github, items}: {title: string, description: string, image: string, link: string, github: string, items: string[]}) => {
+const Archivecard = ({title, description, link, github, items}: {title: string, description: string, link: string, github: string, items: string[]}) => {
     return (
         <a href={link} target='_blank'>
             <div className='w-full h-80 rounded-lg bg-[#112240] p-7 flex flex-col justify-center gap-6 hover:-translate-y-2 group transition-transform duration-300'>

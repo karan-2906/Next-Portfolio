@@ -110,7 +110,7 @@ const Archive = () => {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.2 * (card.id) }}
         >
-          <Archivecard title={card.title} description={card.description} image={card.image} link={card.link} items={card.items} github={card.github} />
+          <Archivecard title={card.title} description={card.description} link={card.link} items={card.items} github={card.github} />
         </motion.div>
         ))}
         {showMore && cards.slice(6).map((card, index) => (
@@ -120,7 +120,7 @@ const Archive = () => {
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.2 * (index + 1) }}
           >
-            <Archivecard title={card.title} description={card.description} image={card.image} link={card.link} items={card.items} github={card.github} />
+            <Archivecard title={card.title} description={card.description} link={card.link} items={card.items} github={card.github} />
           </motion.div>
         ))}
       </div>

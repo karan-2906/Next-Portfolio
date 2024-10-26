@@ -11,7 +11,7 @@ import { SlSocialInstagram, SlSocialLinkedin } from "react-icons/sl";
 const Navbar = () => {
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
-  const ref = useRef<string | any>("");
+  const ref = useRef<HTMLDivElement | null>(null);
   const [showmenu, setShowmenu] = useState<boolean>(false);
 
   const toggleAudio = () => {
@@ -33,8 +33,8 @@ const Navbar = () => {
     // { href: "#contact", icon: BsPersonWorkspace, text: "Contact Me" },
   ];
 
-  const handleclick=(e:any) =>{
-    if (e.target.contains(ref.current)) {
+  const handleclick = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (ref.current && !ref.current.contains(e.target as Node)) {
       setShowmenu(false);
     }
   }

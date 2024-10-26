@@ -16,7 +16,7 @@ const About = () => {
           <p>
             I like to code things from scratch, and enjoy bringing ideas to life in the browser. Well-versed in creating Front-end design with additional to some part of back-end. Diplomatic and tactful with professionals and non-professionals at various levels.
           </p>
-          <p>Here are a few technologies I've been working with recently:</p>
+          <p>Here are a few technologies I&#39;ve been working with recently:</p>
           <ul className="max-w-[450px] text-sm font-titlefont grid grid-cols-2 gap-2 mt-6">
             <li className="flex items-center gap-2"><span className="text-textGreen"><AiFillThunderbolt /> </span> JavaScript</li>
             <li className="flex items-center gap-2"><span className="text-textGreen"><AiFillThunderbolt /> </span> TypeScript</li>
