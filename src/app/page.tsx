@@ -13,7 +13,7 @@ import './globals.css'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
 
-const page = () => {
+const Page = () => {
   useEffect(() => {
     const cursorInner = document.getElementById('cursor-inner');
     const cursorOuter = document.getElementById('cursor-outer');
@@ -99,4 +99,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

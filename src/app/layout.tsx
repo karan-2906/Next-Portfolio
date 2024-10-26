@@ -4,7 +4,7 @@ import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
   title: "Karan Gandhi",
-  description: "Portfolio For Karan Gandhi",
+  description: "Portfolio of Karan Gandhi",
 };
 
 export default function RootLayout({
