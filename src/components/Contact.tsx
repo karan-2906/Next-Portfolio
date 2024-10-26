@@ -4,7 +4,7 @@ import { toast } from 'sonner';
 import { motion } from 'framer-motion';
 
 // const host = "http://localhost:4001";
-const host = "https://portfolio-backend-9xkh.onrender.com";
+// const host = "https://portfolio-backend-9xkh.onrender.com";
 
 
 const Contact = () => {
@@ -23,7 +23,7 @@ const Contact = () => {
     };
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-        console.log(host);
+        // console.log(host);
         e.preventDefault();
         console.log('Handling form submission...', client);
         setButtonText("Sending...")
@@ -33,7 +33,7 @@ const Contact = () => {
         }
 
         try {
-            const response = await fetch(`${host}/api/v1/client/clientreg`, {
+            const response = await fetch(`/api/client`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
