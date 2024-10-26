@@ -39,6 +39,10 @@ body {
     cursor: none;
 }
 
+.active{
+    color: #64ffda;
+}
+
 /* Add this to your global CSS file */
 .scrollbar-hide {
   scrollbar-width: none;  /* Firefox */

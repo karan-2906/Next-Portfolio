@@ -19,7 +19,7 @@ const config: Config = {
         sm: "375px",
         sml: "500px",
         md: "667px",
-        mdl: "768px",
+        mdl: "775px",
         lg: "960px",
         lgl: "1024px",
         xl: "1280px",
@@ -41,7 +41,7 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar")],
 };
 
 export default config;

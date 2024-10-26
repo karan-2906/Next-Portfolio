@@ -11,6 +11,7 @@ import Projects from '@/components/Projects'
 import Archive from '@/components/Archive'
 import './globals.css'
 import Contact from '@/components/Contact'
+import Footer from '@/components/Footer'
 
 const page = () => {
   useEffect(() => {
@@ -64,7 +65,7 @@ const page = () => {
     <div className=''>
       <div className="cursor-inner hidden lg:block" id="cursor-inner"></div>
       <div className="cursor-outer hidden lg:block" id="cursor-outer"></div>
-      <div className='w-full h-screen font-bodyfont bg-bodyColor text-textLight overflow-x-hidden overflow-y-scroll'>
+      <div className='w-full h-screen font-bodyfont bg-bodyColor text-textLight overflow-x-hidden overflow-y-scroll scrollbar scrollbar-track-textDark/20 scrollbar-thumb-textGreen'>
         <Navbar />
         <div className='w-full h-[88vh] xl:flex items-center gap-20 justify-between'>
           <motion.div
@@ -82,6 +83,7 @@ const page = () => {
             <Projects />
             <Archive />
             <Contact />
+            <Footer />
           </div>
           <motion.div
             initial={{ opacity: 0 }}
