@@ -66,10 +66,12 @@ const Page = () => {
       document.removeEventListener('mousemove', onMouseMove);
       window.removeEventListener('resize', handleResize);
     };
-  }, []);
+  });
 
   return (
     <div className=''>
+      <div className="cursor-inner hidden lg:block" id="cursor-inner"></div>
+      <div className="cursor-outer hidden lg:block" id="cursor-outer"></div>
         {loading ? (
           <Loader />
         ) : (
@@ -79,8 +81,7 @@ const Page = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <div className="cursor-inner hidden lg:block" id="cursor-inner"></div>
-            <div className="cursor-outer hidden lg:block" id="cursor-outer"></div>
+            
             <div className='w-full h-screen font-bodyfont bg-bodyColor text-textLight overflow-x-hidden overflow-y-scroll scrollbar scrollbar-track-textDark/20 scrollbar-thumb-textGreen'>
               <Navbar />
               <div className='w-full h-[88vh] xl:flex items-center gap-20 justify-between'>
