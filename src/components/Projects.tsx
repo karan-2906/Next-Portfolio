@@ -10,9 +10,10 @@ const Projects = () => {
             <div className="w-full flex flex-col items-center justify-between gap-28 mt-10">
                 <div className="w-full flex flex-col items-center justify-center gap-28 mt-10">
                     <div className="flex flex-col h-auto xl:flex-row gap-6">
-                        <a className="w-full xl:w-1/2  relative group" href="https://noteshare-snowy.vercel.app/" target="_blank">
-                            <div>
-                                <Image src={"/notes.png"} alt="project image" width={1500} height={1500} className=" object-contain" />
+                        <a className="w-full xl:w-1/2 relative group" href="https://noteshare-snowy.vercel.app/" target="_blank">
+                            <div className="w-full h-full relative  flex pl-6 lgl:pl-0">
+                                <Image className="rounded-lg h-full object-cover" src={"/notes.png"} alt="Karan Gandhi" width={1500} height={1500} />
+                                <div className="hidden lgl:inline-block absolute w-full h-full bg-textGreen/20 rounded-md top-0 left-0 group-hover:bg-transparent duration-300"></div>
                             </div>
                         </a>
                         <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between items-end text-right xl:-ml-16 z-10">
@@ -52,8 +53,9 @@ const Projects = () => {
                 <div className="w-full flex flex-col items-center justify-center gap-28 mt-10">
                     <div className="flex flex-col h-auto xl:flex-row-reverse gap-6">
                         <a className="w-full xl:w-1/2  relative group" href="https://entrepreneursconnect.vercel.app" target="_blank">
-                            <div>
-                                <Image src={"/entre.png"} alt="project image" width={1500} height={1500} className=" object-contain" />
+                        <div className="w-full h-full relative  flex pl-6 lgl:pl-0">
+                                <Image className="rounded-lg h-full object-cover" src={"/entre.png"} alt="Karan Gandhi" width={1500} height={1500} />
+                                <div className="hidden lgl:inline-block absolute w-full h-full bg-textGreen/20 rounded-md top-0 left-0 group-hover:bg-transparent duration-300"></div>
                             </div>
                         </a>
                         <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between items-end text-right z-10">
@@ -93,8 +95,9 @@ const Projects = () => {
                 <div className="w-full flex flex-col items-center justify-center gap-28 mt-10">
                     <div className="flex flex-col h-auto xl:flex-row gap-6">
                         <a className="w-full xl:w-1/2  relative group" href="https://movie-finderbykaran.vercel.app/" target="_blank">
-                            <div>
-                                <Image src={"/movie.png"} alt="project image" width={1500} height={1500} className=" object-contain" />
+                        <div className="w-full h-full relative  flex pl-6 lgl:pl-0">
+                                <Image className="rounded-lg h-full object-cover" src={"/movie.png"} alt="Karan Gandhi" width={1500} height={1500} />
+                                <div className="hidden lgl:inline-block absolute w-full h-full bg-textGreen/20 rounded-md top-0 left-0 group-hover:bg-transparent duration-300"></div>
                             </div>
                         </a>
                         <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between items-end text-right xl:-ml-16 z-10">

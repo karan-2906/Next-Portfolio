@@ -10,6 +10,7 @@ import Experience from '@/components/Experience'
 import Projects from '@/components/Projects'
 import Archive from '@/components/Archive'
 import './globals.css'
+import Contact from '@/components/Contact'
 
 const page = () => {
   useEffect(() => {
@@ -40,18 +41,29 @@ const page = () => {
       requestAnimationFrame(updateCursorOuter);
     };
 
+    const handleResize = () => {
+      const isMobile = window.innerWidth < 1024; // Adjust this breakpoint as needed
+      if (cursorInner && cursorOuter) {
+        cursorInner.style.display = isMobile ? 'none' : 'block';
+        cursorOuter.style.display = isMobile ? 'none' : 'block';
+      }
+    };
+
     document.addEventListener('mousemove', onMouseMove);
     requestAnimationFrame(updateCursorOuter);
+    window.addEventListener('resize', handleResize);
+    handleResize(); // Initial check
 
     return () => {
       document.removeEventListener('mousemove', onMouseMove);
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
 
   return (
     <div className=''>
-      <div className="cursor-inner" id="cursor-inner"></div>
-      <div className="cursor-outer" id="cursor-outer"></div>
+      <div className="cursor-inner hidden lg:block" id="cursor-inner"></div>
+      <div className="cursor-outer hidden lg:block" id="cursor-outer"></div>
       <div className='w-full h-screen font-bodyfont bg-bodyColor text-textLight overflow-x-hidden overflow-y-scroll'>
         <Navbar />
         <div className='w-full h-[88vh] xl:flex items-center gap-20 justify-between'>
@@ -69,6 +81,7 @@ const page = () => {
             <Experience />
             <Projects />
             <Archive />
+            <Contact />
           </div>
           <motion.div
             initial={{ opacity: 0 }}

@@ -1,10 +1,26 @@
 "use client"
-import Image from "next/image"
+import { MdMusicNote,MdMusicOff } from "react-icons/md";
 import Logos from "./Logos"
 import Link from "next/link"
 import { motion } from "framer-motion"
+import { useRef, useState } from "react"
+import { Tooltip } from 'react-tooltip'
 
 const Navbar = () => {
+  const [isPlaying, setIsPlaying] = useState<boolean>(false);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+
+  const toggleAudio = () => {
+    if (audioRef.current) {
+      if (isPlaying) {
+        audioRef.current.pause();
+        setIsPlaying(false);
+      } else {
+        audioRef.current.play();
+        setIsPlaying(true);
+      }
+    }
+  }
   return (
     <div className="w-full shadow-navbarshadow h-20 lg:h-[12vh] sticky top-0 z-50 bg-bodyColor px-4">
       <div className="max-w-container mx-auto h-full py-1 font-titlefont flex items-center justify-between">
@@ -54,6 +70,22 @@ const Navbar = () => {
               Resume
             </motion.button>
           </a>
+          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6 }}>
+            <audio ref={audioRef} src="/preloader.mp3" loop />
+            <button 
+              onClick={toggleAudio} 
+              className="text-textGreen text-2xl cursor-pointer border border-textGreen rounded-full p-1 hover:bg-hoverColor duration-300"
+              data-tooltip-id="music-tooltip"
+              data-tooltip-content={isPlaying ? "Pause Music" : "Play Music"}
+            >
+              {isPlaying ? <MdMusicOff /> : <MdMusicNote />}
+            </button>
+            <Tooltip 
+              id="music-tooltip" 
+              place="bottom"
+              className="bg-textDark text-textGreen absolute"
+            />
+          </motion.div>
         </div>
         {/* small icon section */}
         <div className="w-6 h-5 flex flex-col justify-between items-center mdl:hidden text-4xl text-textGreen cursor-pointer overflow-hidden group">

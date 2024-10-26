@@ -38,3 +38,13 @@
 body {
     cursor: none;
 }
+
+/* Add this to your global CSS file */
+.scrollbar-hide {
+  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* WebKit */
+}

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Archivecard from './Archivecard'
-
+import { motion } from 'framer-motion'
 const cards = [
   {
     id: 1,
@@ -104,10 +104,24 @@ const Archive = () => {
       </div>
       <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-10 lgl:px-10'>
         {cards.slice(0, 6).map((card) => (
-          <Archivecard key={card.id} title={card.title} description={card.description} image={card.image} link={card.link} items={card.items} github={card.github} />
+          <motion.div
+          key={card.id}
+          initial={{ opacity: 0.8 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.2 * (card.id) }}
+        >
+          <Archivecard title={card.title} description={card.description} image={card.image} link={card.link} items={card.items} github={card.github} />
+        </motion.div>
         ))}
-        {showMore && cards.slice(6).map((card) => (
-          <Archivecard key={card.id} title={card.title} description={card.description} image={card.image} link={card.link} items={card.items} github={card.github} />
+        {showMore && cards.slice(6).map((card, index) => (
+          <motion.div
+            key={card.id}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.2 * (index + 1) }}
+          >
+            <Archivecard title={card.title} description={card.description} image={card.image} link={card.link} items={card.items} github={card.github} />
+          </motion.div>
         ))}
       </div>
       <div className='mt-12 flex justify-center items-center'>
