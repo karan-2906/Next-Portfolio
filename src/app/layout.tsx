@@ -5,7 +5,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata: Metadata = {
   title: "Karan Gandhi",
-  description: "Portfolio of Karan Gandhi",
+  description: "Portfolio, Karan Gandhi, Portfolio Website, Karan Gandhi Portfolio, Karan2906, Karan Bhavesh Gandhi",
 };
 
 export default function RootLayout({
