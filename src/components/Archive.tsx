@@ -3,6 +3,15 @@ import Archivecard from './Archivecard'
 import { motion } from 'framer-motion'
 const cards = [
   {
+    id: 0,
+    title: 'Movie Finder',
+    description: 'A movie discovery website in which users can search any title and view its details, ratings and artwork, pulled live from the TMDB catalogue.',
+    image: '/movie.png',
+    link: 'https://movie-finderbykaran.vercel.app/',
+    items: ['ReactJS', 'TMDB API', 'Tailwind CSS'],
+    github: 'https://github.com/karan-2906/Movie-FInder',
+  },
+  {
     id: 1,
     title: 'Social Media App',
     description: 'A social media website in which users can create their account and post their thoughts also they can like and comment on others posts.',

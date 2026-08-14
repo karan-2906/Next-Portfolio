@@ -11,10 +11,10 @@ const About = () => {
             Hello! My name is Karan Gandhi and I enjoy  creating things that live on the internet. My interest in Web Development started back in 2022 when I decided to tried creting a website using react.
           </p>
           <p>
-            Enthusiastic Student with superior skills in working in both team-based and independent capacities. Bringing strong work ethic and excellent organizational skills to any setting. Excited to bring above average user skills as web developer and designing. Collaborative Intern offering strong analytical and problem-solving abilities with high attention to detail.
+            These days I am an engineer at Contentstack, working on the visual editing layer of a headless CMS. It is the part that lets people change a website by clicking straight on the page, which sounds simple until three separate codebases have to agree on what was clicked. Most of what I have learned about state, testing and debugging came from that one product.
           </p>
           <p>
-            I like to code things from scratch, and enjoy bringing ideas to life in the browser. Well-versed in creating Front-end design with additional to some part of back-end. Diplomatic and tactful with professionals and non-professionals at various levels.
+            I like building things from scratch and I am happiest on the problems where the obvious solution does not hold up. Outside work that usually means side projects: multiplayer games, small tools, anything that lets me find out whether the hard part is as hard as it looks.
           </p>
           <p>Here are a few technologies I&#39;ve been working with recently:</p>
           <ul className="max-w-[450px] text-sm font-titlefont grid grid-cols-2 gap-2 mt-6">
@@ -26,7 +26,7 @@ const About = () => {
             <li className="flex items-center gap-2"><span className="text-textGreen"><AiFillThunderbolt /> </span> Tailwind CSS</li>
             <li className="flex items-center gap-2"><span className="text-textGreen"><AiFillThunderbolt /> </span> Express</li>
             <li className="flex items-center gap-2"><span className="text-textGreen"><AiFillThunderbolt /> </span> MongoDB</li>
-            <li className="flex items-center gap-2"><span className="text-textGreen"><AiFillThunderbolt /> </span> MySQL</li>
+            <li className="flex items-center gap-2"><span className="text-textGreen"><AiFillThunderbolt /> </span> Playwright</li>
             <li className="flex items-center gap-2"><span className="text-textGreen"><AiFillThunderbolt /> </span> GitHub</li>
           </ul>
         </div>

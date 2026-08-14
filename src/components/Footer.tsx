@@ -5,7 +5,7 @@ import { TbBrandGithub } from 'react-icons/tb';
 const Footer = () => {
     const socialItems = [
         { href: "https://github.com/karan-2906", icon: TbBrandGithub, text: "See Pojects" },
-        { href: "https://www.linkedin.com/in/karan-gandhi-15082222a/", icon: SlSocialLinkedin, text: "Send Connection" },
+        { href: "https://www.linkedin.com/in/karan-gandhiii/", icon: SlSocialLinkedin, text: "Send Connection" },
         { href: "https://www.instagram.com/_karangandhi_/", icon: SlSocialInstagram, text: "Follow Me" },
         // { href: "#contact", icon: BsPersonWorkspace, text: "Contact Me" },
       ];

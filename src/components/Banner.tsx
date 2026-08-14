@@ -28,9 +28,9 @@ const Banner = () => {
         className="text-base md:max-w-[650px] text-textDark font-medium"
       >
         {" "}
-        I am a web developer with 2+ years of experience in building responsive and dynamic websites with React.
-        I have a strong foundation in front-end & back-end development and a passion for creating beautiful and functional web applications.
-        I am skilled in creating user-friendly and responsive websites using React and its ecosystem.
+        I am a frontend engineer at Contentstack, where I work on the visual editing layer of a headless CMS: a React and TypeScript micro-frontend that lets people edit a website by clicking straight on it.
+        I also look after the testing and release side of it, which is the part I did not expect to enjoy.
+        Outside work I build multiplayer games and small tools, mostly to find out whether the hard part is as hard as it looks.
         {" "} <br />
         <a href="https://github.com/karan-2906" target="_blank" >
           <span className="text-textGreen inline-flex relative cursor-pointer h-7 overflow-x-hidden group mt-1">Learn more

@@ -66,7 +66,9 @@ const Page = () => {
       document.removeEventListener('mousemove', onMouseMove);
       window.removeEventListener('resize', handleResize);
     };
-  });
+    // Runs once: without the empty deps the cleanup cleared the loader timer on
+    // every render, so the preloader could hang and never reveal the page.
+  }, []);
 
   return (
     <div className=''>

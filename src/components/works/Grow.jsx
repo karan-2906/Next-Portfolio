@@ -10,7 +10,7 @@ const Grow = () => {
             className="w-full "
         >
             <h3 className="flex gap-1 font-medium text-xl font-titlefont">
-            Front-end Developer <a href="https://growweducators.vercel.app/" target="_blank" className="text-textGreen tracking-wide">@Grow Educators</a>
+            Front-end Developer <span className="text-textGreen tracking-wide">@Grow Educators</span>
             </h3>
             <p className="text-sm mt-1 font-medium text-textDark">August 2023 - October 2023</p>
             <ul className="mt-6 flex flex-col gap-3">
